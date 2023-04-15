@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- Navigation -->
 <nav>
   <ul>
     <li><a href="zine.html">ZINES</a></li>
@@ -22,17 +23,65 @@
 </nav>
 
 
+<!-- CHOOSE ZINE -->
 <div class="container">
-  <div class="box" onclick="showContent('content1')">Box 1</div>
-  <div class="box" onclick="showContent('content2')">Box 2</div>
-  <div class="box" onclick="showContent('content3')">Box 3</div>
+  <div class="box" onclick="toggle('hidden-div-1')" style="background-image: url('assets/cover1.png')"></div>
+  <div class="box" onclick="toggle('hidden-div-2')" style="background-image: url('assets/cover2.png')"></div>
+  <div class="box" onclick="toggle('hidden-div-3')" style="background-image: url('assets/cover3.png')"></div>
 </div>
 
-<div id="content1" class="content">Content 1</div>
-<div id="content2" class="content">Content 2</div>
-<div id="content3" class="content">Content 3</div>
 
+<!-- REVEAL ZINE -->
+<div class="hidden-div" id="hidden-div-1">
+  <div class="wrapper">
+    <div class="centered" style="border: 2px solid #f0534d;">
+      <div class="title"><strong><i>TITLE 1</i></strong></div>
 
+       <!-- IMAGE CAROSEL -->
+        <div class="image-container">
+          <img id="image" src="assets/cover1.png">
+          <div class="buttons">
+            <button id="prev-button"><</button>
+            <button id="next-button">></button>
+          </div>
+
+        <!-- DOWNLOAD BUTTON -->
+        <p style="text-align: center; margin-top: 400px; width: 300px;white-space: nowrap;border-radius: 25px;" class="panelButton"><b>CLICK HERE TO DOWNLOAD!</b></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hidden-div" id="hidden-div-2">
+  <div class="wrapper">
+    <div class="centered" style="border: 2px solid #f0534d;">
+      <div class="title"><strong><i>TITLE 2</i></strong></div>
+
+        <div class="image-container">
+          <img id="image" src="assets/cover2.png">
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hidden-div" id="hidden-div-3">
+  <div class="wrapper">
+    <div class="centered" style="border: 2px solid #f0534d;">
+      <div class="title"><strong><i>TITLE 3</i></strong></div>
+
+        <div class="image-container">
+          <img id="image" src="assets/cover3.png">
+        </div>
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
 
 <script src="script.js"></script>
 

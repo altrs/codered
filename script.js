@@ -28,13 +28,14 @@ nextButton.addEventListener('click', () => {
 });
 
 
-
 //ZINEREVEALZINEREVEALZINEREVEALZINEREVEALZINEREVEAL
-function showContent(contentId) {
-  var content = document.getElementById(contentId);
-  if (content.style.display === "none") {
-    content.style.display = "block";
+const image = document.getElementById('image');
+
+function toggle(id) {
+  var hiddenDiv = document.getElementById(id);
+  if (hiddenDiv.style.display === "none") {
+    hiddenDiv.style.display = "block";
   } else {
-    content.style.display = "none";
+    hiddenDiv.style.display = "none";
   }
 }

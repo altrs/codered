@@ -137,6 +137,7 @@ nav {
   justify-content: center;
   height: 70px;
   flex-direction: column;
+  background-color: white;
 }
 
 nav ul {
@@ -180,7 +181,10 @@ nav a:hover {
 
 /*ZINES*//*ZINES*//*ZINES*//*ZINES*//*ZINES*//*ZINES*//*ZINES*//*ZINES*//*ZINES*/
 .container {
-  text-align: center; /* Optional, to center the boxes horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
 }
 
 .box {
@@ -189,16 +193,14 @@ nav a:hover {
   height: 400px;
   background-color: #f0534d;
   margin: 30px;
-  margin-top: 200px;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.content {
+.hidden-div {
   display: none;
-  margin: 10px;
-  background-color: #f0f0f0;
+  width: 100%;
   padding: 20px;
 }
 
