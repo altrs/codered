@@ -70,7 +70,6 @@ body {
   border: 3px solid #f0534d;
   padding: 20px;
   margin-top: -125px;
-  z-index: -100;
 }
 
 .panelButton{
@@ -79,6 +78,9 @@ body {
   padding: 10px;
   color: black;
   margin: 0 auto;
-  text-decoration: none;
+  z-index: 100;
+  width: 60%;
 }
+
+
 
