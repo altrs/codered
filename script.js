@@ -1,4 +1,4 @@
-/*CAROSEL*//*CAROSEL*//*CAROSEL*//*CAROSEL*//*CAROSEL*/
+//CAROSELCAROSELCAROSELCAROSELCAROSELCAROSELCAROSEL
 const images = [
   'assets/cover1.png',
   'assets/cover2.png',
@@ -26,3 +26,15 @@ nextButton.addEventListener('click', () => {
   }
   imageElement.src = images[currentIndex];
 });
+
+
+
+//ZINEREVEALZINEREVEALZINEREVEALZINEREVEALZINEREVEAL
+function showContent(contentId) {
+  var content = document.getElementById(contentId);
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
