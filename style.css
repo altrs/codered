@@ -10,14 +10,14 @@ body {
   height: 100%;
   object-fit: contain;
   margin: 0 auto;
-  transform: scale(0.5);
+  transform: scale(0.35);
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: auto;
   /*border: 2px solid #f0534d;*/
 }
 
@@ -33,7 +33,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -140%);
+  transform: translate(-50%, -130%);
   width: 50%;
 }
 
@@ -47,33 +47,38 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-  grid-gap: 20px; /* gap between grid items */
+  grid-template-rows: repeat(2, auto); /* 2 rows with automatic height */
+  grid-gap: 0px; /* gap between grid items */
 }
 
 .grid-item {
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  grid-row: auto; /* set the row placement */
+  grid-column: auto; /* set the column placement */
 }
 
 .grid-item img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
 }
 
-.vp{
-  background-image: url("assets/virtual_panel.png");
-  background-repeat: no-repeat;
-  background-position: 55% 73%;
-  background-size: 50%;
+.centeredvp{
+  width: 505px;
+  height: 500px;
+  text-align: left;
+  line-height: 25px;
+  border: 3px solid #f0534d;
+  padding: 20px;
+  margin-top: -125px;
+  z-index: -100;
 }
 
-.rounded-text {
+.panelButton{
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
-  width: 30%;
+  color: black;
   margin: 0 auto;
-  text-align: center;
-  transform: translate(5%, -970%);
+  text-decoration: none;
 }
 
