@@ -205,4 +205,38 @@ nav a:hover {
 }
 
 
+/*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*//*PANEL*/
+.times {
+  border-right: 2px solid #f0534d;
+  padding: 10px;
+  text-align: left;
+  width: 100px;
+  height: 480px;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.image-box {
+  flex: 0 0 20%;
+  padding: 10px;
+  padding-left: 30px;
+  border-right: 2px solid black;
+}
+
+.content-box {
+  flex: 0 0 80%;
+  padding: 10px;
+}
+
+.image-box img {
+  max-width: 100%;
+}
 
