@@ -2,6 +2,11 @@
 body {
   font-family: 'Libre Baskerville', serif;
   color:#f0534d;
+  cursor: url('assets/mouse.png'), crosshair;
+}
+
+body:hover{
+  cursor: url('assets/mouse1.png'), crosshair;
 }
 
 .logo {
@@ -185,6 +190,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  cursor: grab;
 }
 
 .box {
@@ -196,6 +202,7 @@ nav a:hover {
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: grab;
 }
 
 .hidden-div {
@@ -236,7 +243,118 @@ nav a:hover {
   padding: 10px;
 }
 
+.content-box p {
+  width: 90%;
+}
+
 .image-box img {
   max-width: 100%;
 }
+
+
+/*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*//*ABOUT*/
+
+
+
+.wrapper_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  /*border: 2px solid #f0534d;*/
+}
+
+.centered_about {
+  width: 800px;
+  height: 500px;
+  text-align: left;
+  line-height: 30px;
+  position: relative;
+  top: 200px;
+}
+
+.title_about {
+  border-bottom: 2px solid #f0534d;
+  padding: 25px;
+  text-align: left;
+  flex: 1;
+  font-size: 50px;
+}
+
+.parent {
+  display: flex;
+  height: 100%;
+}
+
+.child1 {
+  border-right: 2px solid #f0534d;
+  width: 50%;
+}
+
+.child2 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-image: url("assets/about_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 400px;
+}
+
+
+
+
+/*LIBRARY*//*LIBRARY*//*LIBRARY*//*LIBRARY*//*LIBRARY*//*LIBRARY*/
+
+.wrapper_lib {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  min-height: auto;
+}
+
+.centered_lib {
+  width: 800px;
+  height: 500px;
+  text-align: left;
+  line-height: 30px;
+  position: relative;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.lt{
+  color: #f0534d;
+}
+
+
+
+/*POPUP*//*POPUP*//*POPUP*//*POPUP*//*POPUP*//*POPUP*//*POPUP*/
+
+#popup {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 350px;
+  height: 330px;
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 999;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#close-popup{
+  background-color: white; /* Set background color */
+  border-radius: 5px; /* Add rounded corners */
+  border: 1px solid #f0534d;
+  color: #f0534d;
+}
+
+
+
 
