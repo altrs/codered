@@ -266,7 +266,7 @@ nav a:hover {
 
 .centered_about {
   width: 800px;
-  height: 500px;
+  height: 520px;
   text-align: left;
   line-height: 30px;
   position: relative;
@@ -275,7 +275,7 @@ nav a:hover {
 
 .title_about {
   border-bottom: 2px solid #f0534d;
-  padding: 25px;
+  padding: 15px;
   text-align: left;
   flex: 1;
   font-size: 50px;

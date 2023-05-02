@@ -28,18 +28,6 @@ nextButton.addEventListener('click', () => {
 });
 
 
-//ZINEREVEALZINEREVEALZINEREVEALZINEREVEALZINEREVEAL
-const image = document.getElementById('image');
-
-function toggle(id) {
-  var hiddenDiv = document.getElementById(id);
-  if (hiddenDiv.style.display === "none") {
-    hiddenDiv.style.display = "block";
-  } else {
-    hiddenDiv.style.display = "none";
-  }
-}
-
 
 //POPUPPOPUPPOPUPPOPUPPOPUPPOPUPPOPUPPOPUPPOPUPPOPUP
 
